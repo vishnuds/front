@@ -1,68 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Webpage</title>
-    <link href="stylesheets/stylesheet.css" rel="stylesheet" type="text/css" />
+      <meta charset="utf-8" />
+	  <title>Vishnu Dutt Sharma </title>
+	  <link rel ="stylesheet/stylesheet.css" type="text/css" href="style.css" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+	  
+	  <!-- [if IE]>
+	       <script src ="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		   <![endif] -->
+		   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+
+$(document).ready(function(){
+  $("#social").hover(function(){
+    $(this).animate({opacity:1,left:'0px'});
+	$(".soc").animate({opacity:1});
+  },function(){
+    $(this).animate({opacity:1,left:'-41px'});
+	$(".soc").a({opacity:0.3});
+  });
+  
+});
+</script>
+		   
 </head>
 <body>
-<div id="wrapper">
-    
-	<div id="header">
-		<div id="nav"><a href="index.html">Home</a> | <a href="#">About Me</a> | <a href="#">Contact Me</a> | <a href="#">My Photos</a> | <a href="#">My Videos</a></div>
-		<div id="bg"></div>
-	</div>
-	
-	<div id="main-content">
-		<div id="left-column">
-			<div id="logo">
-			Welcome to my Webpage
-			</div>
-			<div class="box">
-        		<h1>What You'll Find Here</h1>
-        		<p>Here are some of my hobbies: </p>
-				<ul style="margin-top:10px;">
-					<li>Robotics</li>
-					<li>Listing Songs</li>
-					<li>Reading</li>
-					<li>Coding</li>
-					<li>Watching Movies</li>
-				</ul>
-			</div>
-			<h2>Some of my faourite quotes</h2>
-			<p>
-				<img src="http://img189.imageshack.us/img189/9177/paperru.jpg
-" width="139" height="150" style="margin: 0 10px 10px 0;float:left;" />
-				<em>"Stay Hungry! Stay Foolish!"</em> - Steve Jobs<br/>
-				<em>"I'm the one who knocks."</em> - Walter White<br/>
-				<em>"In all the years to come…in your most private moments…I want you to remember…my hand…at your throat…I want…you to remember…the one man who beat you"</em> - Bruce Wayne<br/>
-				<em>"I start early, and I stay late, day after day after day, year after year. It took me 17 years and 114 days to become an overnight success."</em> - Lionel Messi<br/>
-								<em>"I start early, and I stay late, day after day after day, year after year. It took me 17 years and 114 days to become an overnight success."</em> - Lionel Messi<br/>
-			</p>
-		</div>
-		<div id="right-column">
-			<div id="main-image"><img src="http://img38.imageshack.us/img38/7065/michaelscotto.jpg
-" width="160" height="188" /></div>
-			<div class="sidebar">
-				<h3>Blurb About Me</h3>
-				<p>My name is Michael Scott. And I love Dunder Mifflin and Dwight Schrute.</p>
-				<h3>Find Me Elsewhere</h3>
-				<div class="box">
-					<ul>
-						<li><a href="https://www.facebook.com/vishnu.sharma.902266" target="_blank">Facebook</a></li>
-						<li><a href="https://twitter.com/VishnuDSharma" target="_blank">Twitter</a></li>
-						<li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank">LinkedIn</a></li>
-						<li><a href="https://plus.google.com/106656324140468808255/posts" target="_blank">Google+</a></li>
-		
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		Copyright &copy; 2012 Michael Scott. All rights reserved.<br/>
-		Layout adapted from <a href="http://www.web-designers-directory.org/" target="_blank">Web Designers' Directory</a>.
-	</div>
-</div>
-
+     <div id="wrapper">
+	   <header>
+	        <a href="index.html"><img src="http://auv-iitkgp.in/images/images_in/3F.png" /></a>
+	        <a href="index.html"><img src="http://auv-iitkgp.in/images/images_in/logo.png" /></a>
+	   
+	   </header>
+	   <nav>
+	        <ul>
+			     <li class="active"><a href="#"> Home </a></li>
+				 <li><a href="#"> Team </a></li>
+				 <li><a href="#"> Events </a></li>
+				 <li><a href="#"> Vehicle </a></li>
+				 <li><a href="#"> Gallery </a></li>
+				 <li><a href="#"> Blog </a></li>
+				 <li><a href="#"> Sponser </a></li>
+				 <li><a href="#"> Media </a></li>
+				 <li><a href="#"> Contact </a></li>
+			</ul>
+			<div class="clear"></div>
+	   </nav>
+	   <aside class="sidebar">
+	       <div id="social">
+	       <tr>
+		       <td><a href="https://www.facebook.com/vishnu.sharma.902266" target="_blank" class="soc" ><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png"/></a></td><br />
+			   <td><a href="https://twitter.com/VishnuDSharma" target="_blank" class="soc" ><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png"/></a></td><br />
+			   <td><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="soc"  ><img src="http://www.w3newbie.com/wp-content/uploads/linkedin.png"/></a></td><br />
+			   <td><a href="https://plus.google.com/106656324140468808255/post" target="_blank" class="soc"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png"/></a></td><br />
+			   
+		   </tr>
+		   </div>
+	   </aside>
+	   <section class="left-col">
+	      <h3 id="p1">My Boxer Dog</h3>
+		  <img src="http://www.w3newbie.com/wp-content/uploads/boxer1.png"/>
+		  <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Inter</p>
+	   </section>
+	   <aside class= "sidebar">
+	   <h3>Size</h3>
+		  <img src="http://www.w3newbie.com/wp-content/uploads/boxer2.png"/> 
+		  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.  </p>
+	   </aside>
+	   
+	   <aside class= "sidebar">
+	   <h3>Size</h3>
+		  <img src="http://www.w3newbie.com/wp-content/uploads/boxer3.png"/> 
+		  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.  </p>
+	   </aside>
+	   <section class="left-col">
+	         <h3>Food</h3>
+			 <div class="vid">
+			    <iframe width="560" height="315" src="http://www.youtube.com/embed/Z-TOHc7I1pc" frameborder="0" allowfullscreen> </iframe>  
+			 </div>
+			 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from </p>
+	   </section>
+	   <div class="clear"></div>
+	   <footer>
+	   <h3>Boxer Dog 2013</h3>
+	   </footer>
+	  </div>
 </body>
 </html>
